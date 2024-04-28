@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <Box>
       {/* Hero Section */}
-      <Flex bg="blue.600" color="white" minHeight="70vh" direction="column" align="center" justify="center" textAlign="center" p={10}>
+      <Flex bg="blue.600" color="white" minHeight="70vh" direction="column" align="center" justify="center" textAlign="center" p={10} bgImage="url('https://images.unsplash.com/photo-1581320541782-6e8b2f6b2b71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" bgSize="cover" bgPosition="center">
         <Heading as="h1" size="2xl" fontWeight="bold">
           Elevate Your Brand
         </Heading>
