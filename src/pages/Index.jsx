@@ -56,20 +56,43 @@ const Index = () => {
 
       {/* Footer */}
       <Box bg="blue.800" color="white" p={5}>
-        <Flex justify="space-between" align="center" wrap="wrap">
-          <Text>&copy; {new Date().getFullYear()} Your Marketing Company</Text>
+        <Flex direction="column" align="center" justify="center">
+          <Flex justify="space-between" align="center" w="full" mb={4}>
+            <Text>&copy; {new Date().getFullYear()} Your Marketing Company</Text>
+            <HStack spacing={4}>
+              <Link href="https://facebook.com" isExternal>
+                <Icon as={FaFacebookF} />
+              </Link>
+              <Link href="https://twitter.com" isExternal>
+                <Icon as={FaTwitter} />
+              </Link>
+              <Link href="https://instagram.com" isExternal>
+                <Icon as={FaInstagram} />
+              </Link>
+              <Link href="https://linkedin.com" isExternal>
+                <Icon as={FaLinkedinIn} />
+              </Link>
+            </HStack>
+          </Flex>
           <HStack spacing={4}>
-            <Link href="#" isExternal>
-              <Icon as={FaFacebookF} />
+            <Link href="mailto:contact@yourmarketingcompany.com">
+              <Icon as={FaEnvelope} />
+              contact@yourmarketingcompany.com
             </Link>
-            <Link href="#" isExternal>
-              <Icon as={FaTwitter} />
+            <Link href="tel:+1234567890">
+              <Icon as={FaPhone} />
+              +1 234 567 890
             </Link>
-            <Link href="#" isExternal>
-              <Icon as={FaInstagram} />
+          </HStack>
+          <HStack spacing={4} mt={2}>
+            <Link p="2" href="#home">
+              Home
             </Link>
-            <Link href="#" isExternal>
-              <Icon as={FaLinkedinIn} />
+            <Link p="2" href="#services">
+              Services
+            </Link>
+            <Link p="2" href="#about">
+              About
             </Link>
           </HStack>
         </Flex>
